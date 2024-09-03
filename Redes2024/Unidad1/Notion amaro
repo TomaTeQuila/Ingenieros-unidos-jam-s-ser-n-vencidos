@@ -1,1 +1,469 @@
 https://www.notion.so/Redes-de-computadores-6ff17e494d10485d9fb053ef93bb71a1?pvs=4
+
+# Unidad 1
+
+End devices: Desktop computer - Laptop - Printer - Etc.
+
+- Intermediary Devices
+    - Wireless Router
+    - Lan switch
+    - Router
+    - Multiplayer Switch
+    - Firewall Appliance
+- Network Media:
+    - Wireless media
+    - Bluetooth
+    - WI-FI
+    - WIMAX
+    - Satelitales
+- LAN media
+    - Ethernet
+    - UTP → Cruzado (Transmite - - - - - Transmite) / Directo (Transmite ——— Recibe)
+- WAN Media (Redes de conexión extensa ——z____ )
+    - Fibra óptica
+    - Varios puntos Internetwork
+
+Cuando los dispositivos cumplen la misma función, se debería usar el cable cruzado, y si no, un cable directo. Computador - - - Router es quién rompe la regla.
+
+### Tipos comunes de redes
+
+**Red SOHO** → Redes pequeñas domésticas que conectan algunas computadores entre sí y con Internet. Router ISR (Router de Servicios Integrados)(Puertos WAN y puertos LAN) Pocos puertos disponible, 1-4 puertos LAN, y solo 1 puerto WAN. 
+
+Las redes medianas a grandes incluyen muchos lugares con cientos/miles de computadores interconectados. 
+
+**Intranet y Extranets → Intranet:** Company Only | **Extranet:**  Suppliers, Customers, Collaborators | **Internet:**  The World 
+
+Una Intranet es una colección privada LAN y WAN internas de una organización solo para personas autorizadas en esta.
+
+Una organización puede usar una Extranet para dar un acceso seguro a su red por parte de colaboradores externos a la empresa.
+
+### Redes confiables
+
+La red convergente. Las redes de datos convergentes transportan múltiples servicios en un enlace que incluyen:
+
+- Datos
+- Voz
+- Video
+
+### Red convergente
+
+Unificación de servicio. Transferencia de datos, voz y vídeo por el mismo medio. Esa red siempre debe estar disponible y funcionar bien, aparte de ser segura.
+
+---
+
+## Red confiable (Tolerancia de fallas, Escalabilidad & Calidad)
+
+### Tolerancia de fallas
+
+Se necesitan varias rutas en caso de que falle una. 
+
+Esto no es posible con redes conmutadas por circuitos, ya que tienen circuitos establecidos. Las redes confiable no tienen este problema, ya que poseen una redundancia de paquetes conmutados, con muchas redes y caminos en caso de que falle uno.
+
+### Escalabilidad
+
+Una red expandible puede expandirse fácil y rápidamente para admitir nuevos usuarios/Aplicaciones sin afectar el rendimiento actual.
+
+Se siguen normas y protocolos para que sean escalables
+
+Siempre se deja una holgura de prevención, es decir para 48 equipos no sirve un switch de 48 o 2 de 24 puertos, ya que falta un puerto para conectar al router, o más equipos en caso de una expansión.
+
+### Calidad de servicio
+
+Cuando hay una mayor demanda de ancho banda de la que hay disponible y la QoS no está configurada, podemos experimentar interrupciones o mala calidad de red, por ejemplo, en vídeos de YouTube.
+
+La calidad de servicio (QoS), es el principal servicio para garantizar la entrega confiable de ancho banda al usuario.
+
+### Seguridad
+
+**Seguridad de la infraestructura**
+
+- Seguridad física de los dispositivos
+- Prevenir acceso no autorizado a dispositivos
+
+**Seguridad de la información**
+
+- Protección de la información transmitida a través de la red
+
+**Tres objetivos de la seguridad de red**
+
+- Confidencialidad: *Solo los destinatarios deseados pueden leer los datos*.
+- Integridad: *Garantía de que no se adulteraron datos.*
+- Disponibilidad: *Garantía del acceso confiable y oportuno a datos por parte de usuarios autorizados*.
+
+Siempre un dispositivo con mayor capacidad física de puertos, viene de la mano con una mejora de Hardware, ya que está pensado para soportar mayor cantidad de dispositivos. 48 P > 2 x 24 P
+
+---
+
+### Tendencias de red
+
+La función de la red se debe ajustar y transformar continuamente para mantenerse al día con los nuevas tecnologías que tienden ir usando los usuarios finales. Entre las nuevas tendencias están:
+
+- Colaboración en línea (Teams, Docs, Github, VS, Slides, Sharepoint, Cisco WebEx, etc.)
+- Comunicaciones de vídeo (Zoom, Discord, Whatsapp…)
+- Computación en la nube (Drive, Azure, AWS)
+- Propio dispositivo (BYOD)
+
+### Tendencias tecnológicas en el hogar
+
+La inteligencia del hogar es una tendencia en alza, el conectar dispositivos físicos a internet, sean interruptores, refrigeradores, lámparas, etc.
+
+---
+
+### Las reglas
+
+**Establecimiento de reglas**
+
+Los protocolos deben tener requisitos:
+
+- Un emisor y un receptor identificados
+- Idioma y gramática
+- Velocidad y momento de entrega
+- Requisitos de confirmación
+
+Protocolos informáticos comunes deben incluir los requisitos:
+
+- Codificación de los mensajes
+- Formato y encapsulamiento del mensaje
+- Tamaño del mensaje
+    - Dependiendo de las condiciones del medio.
+    - Se dividen los mensajes, para que no excedan el limite del ancho de banda.
+- Sincronización del mensaje
+    - Se dividen los mensajes.
+        - Se etiquetan las divisiones para identificarlas.
+- Opciones de entrega del mensaje
+    - Eficiencia ⇒ Costoso → Deben cumplirse todos los requisitos = Posibles pérdidas, más tiempos de espera.
+
+**Codificación**
+
+Proceso donde la información se convierte en otra forma aceptable para la transmisión. 
+
+La decodificación, es el proceso inverso para interpretar el dato.
+
+Codificación                                                                                                           Decodificación
+
+Dato → 1010101010 → +-+-+-+-+-+- → -_-_-_-_-_ → +-+-+-+-+- → 1010010101010 → Dato
+
+**Formato y Encapsulamiento**
+
+Se debe utilizar un formato o estructura específica. 
+
+Los formatos dependen del tipo de mensaje y el canal que se utilice para entregarlo.
+
+El router, los switches, etc. Son los encargados en llevar un mensaje a otro destino por el camino correcto.
+
+**Tamaño del mensaje**
+
+Mensajes que exceden o puedan colapsar el ancho de banda, se dividen en varias partes de menor tamaño, para poder enviarlos.
+
+**Temporización del mensaje**
+
+Control de flujo
+
+- Administra la velocidad de transmisión de datos. Define cuanta información se envía y a que velocidad.
+
+Tiempo de espera de respuesta
+
+- El tiempo que espera un dispositivo cuando no escucha un mensaje.
+
+Método de acceso
+
+- Administra quien pueda enviar datos.
+- Puede haber varias reglas que rijan cuestiones como las «colisiones». Esto es cuando más de un dispositivo envía tráfico al mismo tiempo y los mensajes se dañan.
+
+**Opciones de entrega**
+
+- Unicast
+    - Comunicación uno a uno
+- Multicast
+    - Comunicación uno a muchos. No a todos.
+- Broadcast
+    - Uno para todos.
+    - No son buenos. Procesar información innecesaria para ambas partes.
+- Anycast
+    - Se manda un mensaje a través de otro dispositivo.
+    - El emisor, le pide a otro dispositivo, que le envíe el dato, a otro dispositivo más.
+
+**Descripción general del protocolo de red**
+
+Definen el conjunto común de reglas.
+
+Se pueden implementar en:
+
+- Software
+- Hardware
+- Ambos
+
+| Tipo de protocolo | Descripción |
+| --- | --- |
+| Comunicaciones de red | Permitir que dos o más dispositivos se conecten a través de una o más redes. |
+| Seguridad de redes | Datos seguros, para proporcionar autenticación, integridad de datos y cifrado de datos. |
+| Tabla | Permitir que los routers intercambien información de ruta, comparen información de ruta y seleccionen la mejor ruta.  |
+| Detección de servicios | utilizado para detección automática de dispositivos o servicios. |
+
+TCP/IP se encarga de todo esto. Es un protocolo estándar que opera transversalmente. Funciona sin importar el Hardware/Software que se usa. 
+
+**Funciones de protocolo de red**
+
+Los dispositivos usan protocolos acordados para comunicarse.
+
+Protocolos pueden tener una o más funciones.
+
+Debe estar tan organizado un protocolo de red, para que no importe el dispositivo, mecanismo o medio, y el mensaje siempre pueda llegar.
+
+**Interacción de protocolos**
+
+Las requieren el uso de varios protocolos.
+
+Cada protocolo tiene su propia función y formato.
+
+El protocolo se encarga del transporte. Los protocolos se encargan de que lleguen partes pérdidas del mensaje, decodificar el mensaje, etc.
+
+HTTP / TCP / IP / Ethernet
+
+Se encargan de que un mensaje llegue correctamente a su destino.
+
+**Conjunto de protocolos**
+
+Los protocolos deben trabajar con otros protocolos.
+
+Los protocolos se dividen por capas
+
+- Capas superiores
+- Capas inferiores: Se preocupan de mover datos y proporcionar servicios a las capas superiores
+
+Suite de protocolos
+
+- Protocolos interrelacionados para realizar un conjunto de acciones
+
+*[VER PPT]*
+
+[Preguntas certamen] Red no orientada a la conexión: *Puedo transmitir entre puntos finales sin un acuerdo previo.*
+
+Red conectada por paquete: *Puede usar cualquier camino para llegar al destino.* 
+
+**Capas de protocolo**
+
+Aplicación:
+
+`Transporte`: *Que se debe tener en cuenta para transportar el paquete.*
+
+`Internet`: *Identificar el mapa y el camino a tomar*
+
+`Acceso a la red`: *Donde están los medios.*
+
+La IP identifica a la tarjeta/adaptador de red.  
+
+**Suite de protocolos**
+
+TCP/IP Conjunto de protocolos utilizados por Internet
+
+TCP/IP
+
+- Conjunto de protocolos estándar abierto, gratuito, público para cualquier proveedor
+- Protocolo basado en estándares, aprobado por una organización de estandarización
+- TCP/IP Layers
+    - App layer
+        - Name System
+            - DNS
+        - Host Config
+            - DHCPv4
+            - DHVPv6
+            - SLAAC
+        - Email
+            - SMTP
+            - POP3
+            - IMAP
+        - File transfer
+            - FTP
+            - SFTP
+            - TFTP
+        - Web and Web Service
+            - HTTP
+            - HTTPS
+            - REST
+    - Transport Layer
+        - Connection Oriented
+            - TCP
+                - Se asegura de que llegue todo.
+        - Connectionless
+            - UDP
+                - Rápido - ¿Se pierde un mensaje? Mala suerte.
+    - Internet Layer
+        - Internet protocol
+            - IPv4
+            - IPv6
+            - NAT - Verme dentro y afuera.
+        - Messaging
+            - ICMPv4
+            - ICMPv6
+            - ICMPv6 ND
+        - Routing Protocols
+            - OSPG
+            - BGP
+            - ENGRP
+    - Network Access Layer
+        - Address Resolution
+            - ARP
+        - Data Link Protocolos
+            - Ethernet
+            - WLAN
+        - Acá trabajan los switches
+
+MAC Local
+
+IP Global
+
+---
+
+### Modelos de referencia
+
+OSI ⇒ Modelo de etapas comunes para todos. | Manual genérico que explica como funciona un protocolo.
+
+El modelo TCP/IP es identificable en base a sus capas
+
+El modelo OSI igual, pero también por números. Capa 1 = Physical (Mas baja), hasta Capa 7 (Application)
+
+---
+
+### [REVISAR PPT]
+
+---
+
+MAC Dirección física
+
+IP Dirección e identificación en red
+
+### DNS
+
+→ FQDN → inf.usm.cl
+
+→ Niveles DNS
+
+→ Registros
+
+Dominio raíz  → TLD → Sub dominio → Nombre de máquina
+
+Dominio Raíz → CL   →      USM         → Nombre de máquina (iPv4 / iPv6)
+
+**Configuración IP:**
+
+- IP
+- Máscara Red
+- Puerta de enlace
+- IP DNS (DNS Local) ← ICP → Consulta → “usm.cl” Ip? ↔ DNS Response
+
+**DNS : DB** 
+
+- Tabla 1: Zona directa
+    - Nombre → IP
+        - “NS”: Servidor de nombres
+        - “A”: máquina (”aula”, “siga”, “ayudantes”, …)
+        - “MX”: Intercambio de correo
+- Tabla 2: Zona inversa.
+    - IP → Nombre
+        - PTR: Puntero inverso (IP → Nombre)
+
+**Comandos**
+
+nslookup → da el “NS” al cuál se está conectado.
+
+```jsx
+// nslookup -> aula.usm.cl 
+Nombre:  lb-c02.protection.mindfree.cloud // Nombre de máquina 
+                                         // (no necesariamente nombre del servicio)
+Address:  119.8.150.234
+Aliases:  aula.usm.cl
+          lb-usm04.mindfree.cl
+          lb.cloud02.mindfree.cl
+=>
+set type=NS // Muestrame todos los DNS
+usm.cl      // Asociados a "usm.cl"
+
+Servidor:  ns.usm.cl
+Address:  200.1.21.80
+
+usm.cl  nameserver = secundario.nic.cl
+usm.cl  nameserver = ns2.usm.cl
+usm.cl  nameserver = ns.usm.cl
+usm.cl  nameserver = inti.inf.utfsm.cl
+usm.cl  nameserver = mateo.elo.utfsm.cl
+ns.usm.cl       internet address = 200.1.21.80
+ns2.usm.cl      internet address = 200.1.21.150
+inti.inf.utfsm.cl       internet address = 200.1.19.1
+inti.inf.utfsm.cl       AAAA IPv6 address = 2800:270:c::3
+mateo.elo.utfsm.cl      internet address = 200.1.17.4
+secundario.nic.cl       internet address = 200.7.5.7
+secundario.nic.cl       AAAA IPv6 address = 2001:1398:276:0:200:7:5:7
+```
+
+### DHCP
+
+- “Parámetros IP”
+    - IP
+    - Máscara
+    - Puerta de enlace
+    - Dirección del DNS
+    - Concesión “LEASE”
+        - Periodo por el cuál se prestan parámetros “IP”. Una vez pasado el periodo, el servidor te realiza un PING, y si no estás conectado, borra el registro y asigna la nueva red DHCP a otro equipo.
+
+DHCP  DISCOVER D.D → Consulta BROADCAST 
+
+DHCP REQUEST D.R → Se busca quien tiene la IP
+
+DHCP OFFER D.O → Ofrece IP → Hace ping → Si no hay respuesta, asigna esa IP desocupada.
+
+DCH ACK D.A 
+
+### HTTP
+
+**Funciones**
+
+- GET
+- POST
+- PUT
+
+TCP/IP
+
+Aplicación   → DNS, HTTP, SMTP, POP, IMAP
+
+Transporte    |
+
+Internet         |   → Paquete “IP” → IPv4/IPv6    
+
+Acceso Red   | → Trama (Ethernet) → Dirección física
+
+---
+
+### Router
+
+→ RAM → Running Config
+
+→ NVRAM → STARTUP Config
+
+→ Flash → IDS
+
+→ ROM → POST Checkeo de inicio
+
+→ CPU 
+
+→ Interfaces de red → Puerto de consola & Puerto auxiliar
+
+No tienen puertos para monitor ni teclados. No display, no entradas, solo almacenamientos.
+
+DB-9
+
+CLI → Conexión al OS del router. 
+
+Router: I.O.S ⇒ Router → Modo usuario.
+
+                                     → _ ?
+
+                                 → show ? | show running-config ? | enable (comando usuario privilegiado #)
+
+Router # Configure terminal ⇒ Usuario privilegiado
+
+Router(Config)# → Interface “interface sis 0/0” Router(Conf-if)# IP ADD 192.168.0.1 255.255.255.0 / # NO SHUTDOWN <|> Routing 
+
+# ⇒ Access list.
+
+Router conecta distintas redes, trabaja a capa 3. ¿Qué es lo que conocer un router? IP’s. El router tiene una bd “Tabla de rutas”. Router#show ip
